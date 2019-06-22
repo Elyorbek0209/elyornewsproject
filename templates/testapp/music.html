@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+{% load staticfiles %}
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sport News</title>
+
+      <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+            integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+            crossorigin="anonymous">
+
+      <link rel="stylesheet" href="{% static "css/elyornews.css" %}">
+
+</head>
+
+<body>
+
+
+             <h1 class="display-4">ELYOR MUSIC NEWS INFORMATION...HEAD LINES OF TODAY</h1>
+
+            <ul>
+
+                <li>{{ news1 }}</li>
+
+                <li>{{ news2 }}</li>
+
+                <li>{{ news3 }}</li>
+
+                <li>{{ news4 }}</li>
+
+                <li>{{ news5 }}</li>
+
+
+            </ul>
+
+    <h2> {{ date }}</h2>
+
+
+             <img src="{% static "images/bugatti_la_voiture_noire_vladsavov_geneva2.jpg" %}">
+
+             <img src="{% static "images/5538_20190326_095010_1_-large.jpg" %}">
+
+             <img src="{% static "images/bugatti_type_57_bugatti_la_voiture_noire_1.jpeg" %}">
+
+</body>
+</html>
